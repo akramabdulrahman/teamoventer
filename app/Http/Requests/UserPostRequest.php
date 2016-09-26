@@ -6,6 +6,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UserPostRequest extends FormRequest
 {
+
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -29,4 +31,6 @@ class UserPostRequest extends FormRequest
             'password' => 'required|min:6',
         ];
     }
+
+
 }

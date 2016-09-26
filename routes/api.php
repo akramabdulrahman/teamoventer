@@ -22,3 +22,7 @@ Route::resource('team', "TeamsController");
 Route::resource('task', "TasksController");
 Route::post('login','UserController@login');
 Route::post('register','UserController@register');
+Route::get('photos','PhotosController@index');
+Route::post('photos/create','PhotosController@create');
+Route::post('photos/{photo}/like','PhotosController@like');
+Route::post('photos/{photo}/comment','PhotosController@comment');
